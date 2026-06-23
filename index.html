@@ -127,13 +127,21 @@
     <p>© 2026 Fostela</p>
 </footer>
 
-<!-- JS -->
 <script>
     const toggle = document.getElementById("menu-toggle");
     const nav = document.getElementById("nav-menu");
+    const links = document.querySelectorAll("#nav-menu a");
 
+    // toggle open/close
     toggle.addEventListener("click", () => {
         nav.classList.toggle("active");
+    });
+
+    // CLOSE MENU WHEN LINK IS CLICKED
+    links.forEach(link => {
+        link.addEventListener("click", () => {
+            nav.classList.remove("active");
+        });
     });
 </script>
 
