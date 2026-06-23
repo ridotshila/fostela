@@ -29,9 +29,9 @@ body {
 }
 
 .logo img {
-  height: 5px;          /* Smaller size */
-  width: 5px;           /* Keep square */
-  border-radius: 5%;    /* Circle shape */
+  height: 15px;          /* Smaller size */
+  width: 15px;           /* Keep square */
+  border-radius: 15%;    /* Circle shape */
   object-fit: cover;     /* Crop neatly */
   border: 2px solid #ff6600; /* Orange border */
 }
