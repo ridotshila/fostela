@@ -1,3 +1,6 @@
+/* GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 *{
     margin:0;
     padding:0;
@@ -5,21 +8,27 @@
     font-family:'Poppins',sans-serif;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     background:#f5f5f5;
     color:#333;
 }
 
+/* HEADER */
+
 header{
     position:fixed;
-    width:100%;
     top:0;
     left:0;
+    width:100%;
     padding:20px 8%;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    background:rgba(0,0,0,0.9);
+    background:rgba(0,0,0,0.95);
     z-index:1000;
 }
 
@@ -27,12 +36,14 @@ header{
     color:#d4af37;
     font-size:32px;
     font-weight:700;
+    letter-spacing:2px;
 }
 
 nav a{
-    color:#fff;
+    color:white;
     text-decoration:none;
     margin-left:30px;
+    font-size:16px;
     transition:0.3s;
 }
 
@@ -40,9 +51,13 @@ nav a:hover{
     color:#d4af37;
 }
 
+/* HERO SECTION */
+
 .hero{
     height:100vh;
-    background:url('images/hero.jpg') center/cover;
+    background:url("images/hero.jpg");
+    background-size:cover;
+    background-position:center;
     position:relative;
     display:flex;
     justify-content:center;
@@ -52,6 +67,8 @@ nav a:hover{
 
 .overlay{
     position:absolute;
+    top:0;
+    left:0;
     width:100%;
     height:100%;
     background:rgba(0,0,0,0.7);
@@ -59,12 +76,12 @@ nav a:hover{
 
 .hero-content{
     position:relative;
-    color:white;
     z-index:2;
+    color:white;
 }
 
 .hero h1{
-    font-size:80px;
+    font-size:90px;
     color:#d4af37;
 }
 
@@ -77,34 +94,39 @@ nav a:hover{
     max-width:700px;
     margin:auto;
     font-size:20px;
+    line-height:1.8;
 }
 
 .buttons{
     margin-top:40px;
 }
 
-.btn,
-.btn-outline{
+/* BUTTONS */
+
+.btn{
     display:inline-block;
+    background:#d4af37;
+    color:white;
     padding:15px 35px;
-    text-decoration:none;
     border-radius:40px;
+    text-decoration:none;
     margin:10px;
     transition:0.3s;
 }
 
-.btn{
-    background:#d4af37;
-    color:white;
-}
-
 .btn:hover{
-    background:#b99528;
+    background:#b8952d;
 }
 
 .btn-outline{
+    display:inline-block;
     border:2px solid white;
     color:white;
+    padding:15px 35px;
+    border-radius:40px;
+    text-decoration:none;
+    margin:10px;
+    transition:0.3s;
 }
 
 .btn-outline:hover{
@@ -112,9 +134,12 @@ nav a:hover{
     color:black;
 }
 
+/* SERVICES */
+
 .services{
     padding:100px 10%;
     text-align:center;
+    background:white;
 }
 
 .services h2{
@@ -124,15 +149,15 @@ nav a:hover{
 
 .service-container{
     display:flex;
+    justify-content:center;
     gap:30px;
     flex-wrap:wrap;
-    justify-content:center;
 }
 
 .card{
-    background:white;
-    padding:40px;
     width:320px;
+    background:#fff;
+    padding:40px;
     border-radius:20px;
     box-shadow:0 10px 30px rgba(0,0,0,0.1);
     transition:0.3s;
@@ -147,40 +172,60 @@ nav a:hover{
     margin-bottom:20px;
 }
 
-.apparel,
-.delivery{
-    padding:100px 10%;
-    text-align:center;
+.card h3{
+    margin-bottom:20px;
 }
+
+.card p{
+    color:#666;
+    line-height:1.8;
+}
+
+/* APPAREL SECTION */
 
 .apparel{
     background:#111;
     color:white;
+    padding:100px 10%;
+    text-align:center;
 }
+
+.apparel h2{
+    font-size:40px;
+    color:#d4af37;
+    margin-bottom:20px;
+}
+
+.apparel p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+    margin-bottom:40px;
+}
+
+/* DELIVERY */
 
 .delivery{
     background:#d4af37;
     color:white;
+    padding:100px 10%;
+    text-align:center;
 }
 
-.content{
-    max-width:800px;
-    margin:auto;
-}
-
-.content h2{
+.delivery h2{
     font-size:40px;
-    margin-bottom:20px;
+    margin-bottom:30px;
 }
 
-.content p{
-    font-size:18px;
+.delivery p{
+    max-width:700px;
+    margin:auto;
     line-height:1.8;
 }
 
 .delivery ul{
     list-style:none;
-    margin-top:30px;
+    margin-top:40px;
 }
 
 .delivery li{
@@ -188,39 +233,49 @@ nav a:hover{
     font-size:18px;
 }
 
+/* WHY US */
+
 .why{
     padding:100px 10%;
     text-align:center;
+    background:white;
 }
 
 .why h2{
-    margin-bottom:50px;
     font-size:40px;
+    margin-bottom:50px;
 }
 
 .reasons{
     display:flex;
-    flex-wrap:wrap;
-    gap:20px;
     justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
 }
 
 .reason{
     background:#111;
     color:white;
-    padding:25px 40px;
+    padding:20px 35px;
     border-radius:50px;
+    transition:0.3s;
 }
 
+.reason:hover{
+    background:#d4af37;
+}
+
+/* CONTACT */
+
 .contact{
+    background:#f3f3f3;
     padding:100px 10%;
-    background:#f1f1f1;
     text-align:center;
 }
 
 .contact h2{
-    margin-bottom:40px;
     font-size:40px;
+    margin-bottom:40px;
 }
 
 form{
@@ -248,56 +303,23 @@ button{
     border:none;
     padding:15px 40px;
     border-radius:40px;
-    cursor:pointer;
     font-size:18px;
+    cursor:pointer;
+    transition:0.3s;
 }
 
-footer{
+button:hover{
     background:#111;
-    color:white;
-    text-align:center;
-    padding:40px;
 }
 
-footer h3{
-    color:#d4af37;
-    font-size:30px;
-    margin-bottom:10px;
-}
+/* SHOP PAGE */
 
-@media(max-width:768px){
-
-    header{
-        flex-direction:column;
-    }
-
-    nav{
-        margin-top:20px;
-    }
-
-    nav a{
-        margin:10px;
-        display:inline-block;
-    }
-
-    .hero h1{
-        font-size:50px;
-    }
-
-    .hero h2{
-        font-size:28px;
-    }
-
-    .service-container{
-        flex-direction:column;
-        align-items:center;
-    }
-    .shop-page{
+.shop-page{
     padding:150px 10% 100px;
     text-align:center;
     background:#111;
-    color:white;
     min-height:100vh;
+    color:white;
 }
 
 .shop-page h1{
@@ -308,8 +330,9 @@ footer h3{
 
 .shop-page p{
     margin-bottom:50px;
-    font-size:18px;
 }
+
+/* PRODUCTS */
 
 .products{
     display:flex;
@@ -363,4 +386,71 @@ footer h3{
 .buy-btn:hover{
     background:#d4af37;
 }
+
+/* FOOTER */
+
+footer{
+    background:#000;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+footer h3{
+    color:#d4af37;
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+footer p{
+    margin:10px 0;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        padding:20px;
+    }
+
+    nav{
+        margin-top:20px;
+    }
+
+    nav a{
+        margin:10px;
+        display:inline-block;
+    }
+
+    .hero h1{
+        font-size:50px;
+    }
+
+    .hero h2{
+        font-size:28px;
+    }
+
+    .hero p{
+        font-size:16px;
+        padding:0 20px;
+    }
+
+    .service-container,
+    .products,
+    .reasons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card,
+    .product-card{
+        width:100%;
+        max-width:350px;
+    }
+
+    .shop-page{
+        padding-top:180px;
+    }
 }
