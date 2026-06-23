@@ -338,4 +338,53 @@ footer{
     .buttons{
         flex-direction:column;
     }
+    /* ================= HAMBURGER MENU ================= */
+
+.menu-toggle{
+    display:none;
+    font-size:28px;
+    color:white;
+    cursor:pointer;
+}
+
+nav{
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+/* MOBILE NAV */
+
+@media (max-width:768px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    nav{
+        position:absolute;
+        top:70px;
+        right:0;
+        width:100%;
+        background:#000;
+        flex-direction:column;
+        display:none;
+        text-align:center;
+        padding:20px 0;
+    }
+
+    nav a{
+        padding:15px;
+        display:block;
+        border-bottom:1px solid #222;
+    }
+
+    nav.active{
+        display:flex;
+    }
+}
 }
