@@ -3,11 +3,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Poppins', 'Arial', sans-serif;
 }
 
 body {
-  background: #111;
+  background: #0b0d17;
   color: #fff;
   line-height: 1.6;
 }
@@ -17,7 +17,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #222;
+  background: #111;
   padding: 1rem 2rem;
   position: relative;
 }
@@ -29,16 +29,16 @@ body {
 }
 
 .logo img {
-  height: 50px;          /* Smaller size */
-  width: 50px;           /* Keep square */
-  border-radius: 50%;    /* Circle shape */
-  object-fit: cover;     /* Crop neatly */
-  border: 2px solid #ff6600; /* Orange border */
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ff6600;
 }
 
 .logo span {
-  font-size: 1.2rem;
-  font-weight: bold;
+  font-size: 1.1rem;
+  font-weight: 600;
   color: #ff6600;
 }
 
@@ -54,6 +54,7 @@ body {
 .nav-links a {
   text-decoration: none;
   color: #fff;
+  font-weight: 500;
   transition: color 0.3s;
 }
 
@@ -64,9 +65,10 @@ body {
 .btn {
   background: #ff6600;
   color: #fff;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.2rem;
   text-decoration: none;
   border-radius: 5px;
+  font-weight: 600;
   transition: background 0.3s;
 }
 
@@ -100,27 +102,85 @@ body {
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* Hero */
+/* Hero Section */
 .hero {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, #0b0d17 50%, #111 50%);
   padding: 4rem 2rem;
-  background: linear-gradient(to right, #111, #222);
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.hero h1 span {
   color: #ff6600;
 }
 
 .hero p {
   margin-top: 1rem;
   font-size: 1.2rem;
+  color: #ccc;
 }
 
-/* Services */
+.hero-buttons {
+  margin-top: 2rem;
+}
+
+.hero-buttons a {
+  display: inline-block;
+  background: #ff6600;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-right: 1rem;
+  transition: background 0.3s;
+}
+
+.hero-buttons a:hover {
+  background: #e65c00;
+}
+
+.hero-image {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(255, 102, 0, 0.3);
+}
+
+/* Services Section */
 .services {
+  background: #fff;
+  color: #111;
   padding: 3rem 2rem;
   text-align: center;
+}
+
+.services h2 {
+  font-size: 2rem;
+  color: #ff6600;
+  font-weight: 700;
 }
 
 .service-grid {
@@ -131,9 +191,10 @@ body {
 }
 
 .service-card {
-  background: #222;
+  background: #f8f8f8;
   padding: 1.5rem;
   border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   transition: transform 0.3s;
 }
 
@@ -141,8 +202,15 @@ body {
   transform: translateY(-5px);
 }
 
-/* Products */
+.service-card h3 {
+  color: #ff6600;
+  margin-bottom: 0.5rem;
+}
+
+/* Products Section */
 .products {
+  background: #fff;
+  color: #111;
   padding: 3rem 2rem;
   text-align: center;
 }
@@ -150,10 +218,11 @@ body {
 .products h2 {
   font-size: 2rem;
   color: #ff6600;
+  font-weight: 700;
 }
 
 .subtitle {
-  color: #ccc;
+  color: #555;
   margin-bottom: 2rem;
 }
 
@@ -165,7 +234,7 @@ body {
 }
 
 .product-card {
-  background: #222;
+  background: #f8f8f8;
   border-radius: 10px;
   padding: 1.5rem;
   text-align: center;
@@ -205,10 +274,24 @@ body {
 
 /* Footer */
 footer {
-  background: #222;
+  background: #0b0d17;
   text-align: center;
-  padding: 1rem;
-  margin-top: 2rem;
+  padding: 2rem 1rem;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+footer a {
+  color: #ff6600;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 /* Responsive */
@@ -217,7 +300,7 @@ footer {
     position: absolute;
     top: 70px;
     right: 0;
-    background: #222;
+    background: #111;
     width: 200px;
     height: 0;
     overflow: hidden;
@@ -242,12 +325,17 @@ footer {
     height: 250px;
   }
 
-  .hero-image {
-  width: 100%;
-  max-width: 900px;
-  border-radius: 10px;
-  margin-top: 20px;
-  box-shadow: 0 4px 20px rgba(255, 102, 0, 0.3);
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+  }
 }
 
-}
