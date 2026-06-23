@@ -1,0 +1,295 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    color:#333;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,0.9);
+    z-index:1000;
+}
+
+.logo{
+    color:#d4af37;
+    font-size:32px;
+    font-weight:700;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:30px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#d4af37;
+}
+
+.hero{
+    height:100vh;
+    background:url('images/hero.jpg') center/cover;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+}
+
+.hero-content{
+    position:relative;
+    color:white;
+    z-index:2;
+}
+
+.hero h1{
+    font-size:80px;
+    color:#d4af37;
+}
+
+.hero h2{
+    font-size:40px;
+    margin:20px 0;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    font-size:20px;
+}
+
+.buttons{
+    margin-top:40px;
+}
+
+.btn,
+.btn-outline{
+    display:inline-block;
+    padding:15px 35px;
+    text-decoration:none;
+    border-radius:40px;
+    margin:10px;
+    transition:0.3s;
+}
+
+.btn{
+    background:#d4af37;
+    color:white;
+}
+
+.btn:hover{
+    background:#b99528;
+}
+
+.btn-outline{
+    border:2px solid white;
+    color:white;
+}
+
+.btn-outline:hover{
+    background:white;
+    color:black;
+}
+
+.services{
+    padding:100px 10%;
+    text-align:center;
+}
+
+.services h2{
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+.service-container{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card{
+    background:white;
+    padding:40px;
+    width:320px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.icon{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.apparel,
+.delivery{
+    padding:100px 10%;
+    text-align:center;
+}
+
+.apparel{
+    background:#111;
+    color:white;
+}
+
+.delivery{
+    background:#d4af37;
+    color:white;
+}
+
+.content{
+    max-width:800px;
+    margin:auto;
+}
+
+.content h2{
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.content p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+.delivery ul{
+    list-style:none;
+    margin-top:30px;
+}
+
+.delivery li{
+    margin:15px 0;
+    font-size:18px;
+}
+
+.why{
+    padding:100px 10%;
+    text-align:center;
+}
+
+.why h2{
+    margin-bottom:50px;
+    font-size:40px;
+}
+
+.reasons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+
+.reason{
+    background:#111;
+    color:white;
+    padding:25px 40px;
+    border-radius:50px;
+}
+
+.contact{
+    padding:100px 10%;
+    background:#f1f1f1;
+    text-align:center;
+}
+
+.contact h2{
+    margin-bottom:40px;
+    font-size:40px;
+}
+
+form{
+    max-width:700px;
+    margin:auto;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:18px;
+    margin-bottom:20px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+}
+
+textarea{
+    height:150px;
+}
+
+button{
+    background:#d4af37;
+    color:white;
+    border:none;
+    padding:15px 40px;
+    border-radius:40px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:40px;
+}
+
+footer h3{
+    color:#d4af37;
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+    }
+
+    nav{
+        margin-top:20px;
+    }
+
+    nav a{
+        margin:10px;
+        display:inline-block;
+    }
+
+    .hero h1{
+        font-size:50px;
+    }
+
+    .hero h2{
+        font-size:28px;
+    }
+
+    .service-container{
+        flex-direction:column;
+        align-items:center;
+    }
+}
