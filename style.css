@@ -108,18 +108,17 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(to right, #0b0d17 50%, #111 50%);
   padding: 4rem 2rem;
+  background: linear-gradient(to right, #0b0d17 50%, #111 50%);
 }
 
 .hero-text {
   flex: 1;
-  min-width: 300px;
-  text-align: left;
+  min-width: 280px;
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 800;
   color: #fff;
   text-transform: uppercase;
@@ -132,7 +131,7 @@ body {
 
 .hero p {
   margin-top: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #ccc;
 }
 
@@ -158,18 +157,18 @@ body {
 
 .hero-image {
   flex: 1;
-  min-width: 300px;
+  min-width: 280px;
   text-align: center;
 }
 
 .hero-image img {
   width: 100%;
-  max-width: 500px;
+  max-width: 450px;
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(255, 102, 0, 0.3);
 }
 
-/* Services Section */
+/* Services */
 .services {
   background: #fff;
   color: #111;
@@ -185,7 +184,7 @@ body {
 
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
 }
@@ -207,7 +206,7 @@ body {
   margin-bottom: 0.5rem;
 }
 
-/* Products Section */
+/* Products */
 .products {
   background: #fff;
   color: #111;
@@ -228,7 +227,7 @@ body {
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 2rem;
   justify-items: center;
 }
@@ -328,14 +327,18 @@ footer a:hover {
   .hero {
     flex-direction: column;
     text-align: center;
+    background: #0b0d17;
   }
 
   .hero-text {
     text-align: center;
   }
 
+  .hero h1 {
+    font-size: 2rem;
+  }
+
   .hero-image img {
     max-width: 100%;
   }
 }
-
