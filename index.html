@@ -1,97 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fostela | Premium Apparel</title>
-
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fostela Branding & Apparel</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- HEADER -->
-<header>
+  <!-- NAV -->
+  <header>
     <div class="logo">FOSTELA</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#products">Shop</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <!-- HAMBURGER -->
-    <div class="menu-toggle" id="menu-toggle">
-        ☰
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Fostela Branding & Apparel</h1>
+      <p>Premium clothing brand & reliable courier delivery services</p>
+      <a href="#products" class="btn">Explore Shop</a>
     </div>
-</header>
+  </section>
 
-<!-- OVERLAY -->
-<div class="overlay" id="overlay"></div>
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>
+      Fostela is a modern branding and apparel business focused on delivering quality streetwear under our own brand,
+      while also offering fast and reliable courier services for short and long distance deliveries.
+    </p>
+  </section>
 
-<!-- SIDE MENU -->
-<nav class="side-menu" id="side-menu">
-
-    <div class="close-btn" id="close-btn">✕</div>
-
-    <a href="#home">Home</a>
-    <a href="#services">Services</a>
-    <a href="shop.html">Shop</a>
-    <a href="#delivery">Delivery</a>
-    <a href="#contact">Contact</a>
-
-</nav>
-
-<!-- HERO -->
-<section class="hero" id="home">
-    <div class="hero-content">
-        <h1>FOSTELA</h1>
-        <h2>Premium Apparel Brand</h2>
-
-        <div class="buttons">
-            <a href="shop.html" class="btn">View Collection</a>
-        </div>
-    </div>
-</section>
-
-<!-- SERVICES -->
-<section class="services" id="services">
+  <!-- SERVICES -->
+  <section id="services" class="section dark">
     <h2>Our Services</h2>
-</section>
 
-<!-- DELIVERY -->
-<section class="delivery" id="delivery">
-    <h2>Courier Services</h2>
-</section>
+    <div class="grid">
+      <div class="card">
+        <h3>🚚 Courier Services</h3>
+        <p>We deliver packages locally and long distance with speed and care.</p>
+      </div>
 
-<!-- CONTACT -->
-<section class="contact" id="contact">
+      <div class="card">
+        <h3>👕 Fostela Apparel</h3>
+        <p>We design and sell premium branded clothing under the Fostela name.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products" class="section">
+    <h2>Our Clothing</h2>
+
+    <div class="grid">
+      <div class="product">
+        <div class="img"></div>
+        <h3>Fostela T-Shirt</h3>
+        <p>R199.00</p>
+      </div>
+
+      <div class="product">
+        <div class="img"></div>
+        <h3>Fostela Hoodie</h3>
+        <p>R399.00</p>
+      </div>
+
+      <div class="product">
+        <div class="img"></div>
+        <h3>Fostela Cap</h3>
+        <p>R149.00</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section dark">
     <h2>Contact Us</h2>
-</section>
+    <p>Email: fostela@example.com</p>
+    <p>WhatsApp: +27 XXX XXX XXXX</p>
+  </section>
 
-<!-- SCRIPT -->
-<script>
-const menu = document.getElementById("side-menu");
-const overlay = document.getElementById("overlay");
-const openBtn = document.getElementById("menu-toggle");
-const closeBtn = document.getElementById("close-btn");
-const links = document.querySelectorAll(".side-menu a");
-
-// OPEN MENU
-openBtn.addEventListener("click", () => {
-    menu.classList.add("active");
-    overlay.classList.add("active");
-});
-
-// CLOSE MENU
-function closeMenu(){
-    menu.classList.remove("active");
-    overlay.classList.remove("active");
-}
-
-closeBtn.addEventListener("click", closeMenu);
-overlay.addEventListener("click", closeMenu);
-
-// CLOSE ON LINK CLICK
-links.forEach(link => {
-    link.addEventListener("click", closeMenu);
-});
-</script>
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Fostela Branding & Apparel. All Rights Reserved.</p>
+  </footer>
 
 </body>
 </html>
