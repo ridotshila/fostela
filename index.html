@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fostela Branding & Apparel</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <!-- Navigation -->
   <header>
     <nav class="navbar">
       <div class="logo">
-        <img src="logo.jpg" alt="Fostela Logo">
-        <span>Branding and Apparel</span>
+        <img src="logo.jpg" alt="Fostela Logo" />
+        <span>Branding & Apparel</span>
       </div>
 
       <!-- Hamburger Icon -->
@@ -36,9 +36,18 @@
 
   <!-- Hero Section -->
   <section class="hero">
-    <h1>WE DELIVER. WE BRAND. WE INSPIRE.</h1>
-    <p>Premium Apparel & Reliable Courier Services Across South Africa</p>
-    <img src="fostela-delivery-vans.png" alt="Fostela Delivery Vans" class="hero-image">
+    <div class="hero-text">
+      <h1>WE DELIVER. <span>WE BRAND.</span> WE INSPIRE.</h1>
+      <p>Premium Apparel & Reliable Courier Services Across South Africa</p>
+      <div class="hero-buttons">
+        <a href="shop.html">Shop Apparel</a>
+        <a href="#">Courier Services</a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <img src="fostela-delivery-vans.png" alt="Fostela Delivery Vans" />
+    </div>
   </section>
 
   <!-- Services -->
@@ -57,6 +66,10 @@
         <h3>Premium Apparel</h3>
         <p>High-quality branded clothing for every occasion.</p>
       </div>
+      <div class="service-card">
+        <h3>Custom Branding</h3>
+        <p>Brand your business, events, and teams with style.</p>
+      </div>
     </div>
   </section>
 
@@ -68,13 +81,14 @@
 
   <!-- JavaScript -->
   <script>
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('navLinks');
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
 
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('open');
-      hamburger.classList.toggle('active');
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+      hamburger.classList.toggle("active");
     });
   </script>
 </body>
 </html>
+
