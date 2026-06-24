@@ -287,7 +287,8 @@ footer a:hover {
     box-shadow: 0 4px 15px rgba(255, 102, 0, 0.25);
   }
 
-  .social-links {
+/* Social Links */
+.social-links {
   margin-top: 1rem;
 }
 
@@ -302,11 +303,24 @@ footer a:hover {
   color: #e65c00;
 }
 
-
+/* Account Info Styling */
 .account-info {
   margin-top: 1rem;
-  color: #ccc;
-  font-size: 0.9rem;
 }
+
+.account-info p {
+  margin: 0.3rem 0;
+}
+
+.account-number {
+  background: #111;
+  color: #ff6600;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+
 
 }
