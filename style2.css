@@ -288,14 +288,14 @@ footer p {
 .social-links a {
   color: #ff6600;
   margin: 0 10px;
-  text-decoration: none;
-  font-weight: 600;
+  font-size: 1.5rem; /* icon size */
   transition: color 0.3s;
 }
 
 .social-links a:hover {
   color: #e65c00;
 }
+
 
 .account-info {
   margin-top: 1rem;
