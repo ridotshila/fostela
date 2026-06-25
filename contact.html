@@ -35,10 +35,10 @@
 
     <div class="contact-grid">
       <!-- Contact Form -->
-      <form class="contact-form" action="https://wa.me/27824755562?text=Hello%20Fostela,%20I%20would%20like%20to%20get%20in%20touch" method="get" target="_blank">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <form class="contact-form" id="whatsappForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
         <button type="submit" class="send-btn">Send Message</button>
       </form>
 
@@ -83,7 +83,20 @@
       navLinks.classList.toggle("open");
       hamburger.classList.toggle("active");
     });
+
+    // WhatsApp form handler
+    document.getElementById("whatsappForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+
+      const whatsappNumber = "27621391983"; // your WhatsApp number in international format
+      const text = `Hello Fostela,%0AName: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0AMessage: ${encodeURIComponent(message)}`;
+
+      const url = `https://wa.me/${whatsappNumber}?text=${text}`;
+      window.open(url, "_blank");
+    });
   </script>
 </body>
 </html>
-
